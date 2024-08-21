@@ -1,0 +1,93 @@
+.App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  input {
+    padding: 12px;
+    margin-right: 10px;
+    font-size: 16px;
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light border */
+    outline: none; /* Remove default outline */
+}
+input:focus {
+  border-color: #3498db; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Subtle glow on focus */
+}
+  
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #3498db; /* Primary button color */
+  color: white;
+  border: none;
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #2980b9; /* Darker on hover */
+}
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #f9f9f9; /* Light background for list items */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .todo-item span {
+    margin-left: 10px;
+    flex-grow: 1;
+  }
+  
+  .todo-item.completed span {
+    text-decoration: line-through;
+    color: grey;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  .todo-item.completed span {
+    text-decoration: line-through;
+    color: grey;
+  }
+  .filters button {
+    margin-right: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #ecf0f1; /* Light grey buttons */
+    color: #333; /* Dark text */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+}
+  
+.filters button:hover {
+  background-color: #bdc3c7; /* Slightly darker on hover */
+}
+
+.filters button:disabled {
+  font-weight: bold;
+  color: grey;
+  background-color: #dcdcdc; /* Lighter grey for disabled button */
+}
+  
+  
