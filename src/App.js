@@ -23,11 +23,11 @@ function App() {
 
   const handleAddTodo = (e) => {
     e.preventDefault();
-    if (input.trim()) {
+    if (input.trim()) {// input field is not empty 
       axios.post('http://localhost:5000/todos', { text: input })
         .then((response) => {
           setTodos([...todos, response.data]);
-          setInput('');
+          setInput('');//clears the input field after setting the value
         })
         .catch((error) => console.error('Error adding todo:', error));
     }
@@ -36,9 +36,9 @@ function App() {
   const handleToggleComplete = (index) => {
     const todo = todos[index];
     axios.put(`http://localhost:5000/todos/${todo._id}`, {
-      completed: !todo.completed
+      completed: !todo.completed  //updates checkbox value
     })
-    .then((response) => {
+    .then((response) => {        //updates todos based on updated value
       const newTodos = [...todos];
       newTodos[index] = response.data;
       setTodos(newTodos);

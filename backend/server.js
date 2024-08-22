@@ -31,7 +31,7 @@ app.get('/todos', async (req, res) => {
   res.json(todos);
 });
 
-// Create a new todo
+// Creating a new todo
 app.post('/todos', async (req, res) => {
   const newTodo = new Todo({
     text: req.body.text,
@@ -41,13 +41,13 @@ app.post('/todos', async (req, res) => {
   res.json(savedTodo);
 });
 
-// Update a todo
+// Updating a todo
 app.put('/todos/:id', async (req, res) => {
   const updatedTodo = await Todo.findByIdAndUpdate(req.params.id, req.body, { new: true });
   res.json(updatedTodo);
 });
 
-// Delete a todo
+// Deleting a todo
 app.delete('/todos/:id', async (req, res) => {
   await Todo.findByIdAndDelete(req.params.id);
   res.json({ message: 'Todo deleted' });

@@ -2,16 +2,16 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f7f7f7; /* Light background for better readability */
-  color: #333; /* Darker text for better contrast *//*Color of the heading To-Do List in this case*/
+  background-color: #f7f7f7; /* Light background */
+  color: #333; /* Darker text *//*Color of the heading To-Do List in this case*/
 }
 .App {
   text-align: center;
   font-family: Arial, sans-serif;
   margin: 40px auto; /* Centering and increasing margin */
-  max-width: 600px; /* Limit width for better readability */
+  max-width: 600px; /* Limiting width as takes up an entire row */
   padding: 20px;
   background-color: #ffffff; /* White background for main content */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 10px; /* Radius for corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
