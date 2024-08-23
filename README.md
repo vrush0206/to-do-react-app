@@ -1,5 +1,7 @@
 To-Do List React App
+
 August 2024
+
 Overview:
 Create a simple To-Do List Application using React.js. The simple to-do list React app is a lightweight, user-friendly application designed to help users manage their daily tasks efficiently.
 
