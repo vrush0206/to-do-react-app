@@ -9,7 +9,7 @@ function TodoItem({ todo, index, onToggleComplete, onRemove }) {
         onChange={() => onToggleComplete(index)}
       />
       <span>{todo.text}</span>
-      <button onClick={() => onRemove(index)}>Remove</button>
+      <button onClick={() => onRemove(index)}>Delete</button>
     </li>
   );
 }
